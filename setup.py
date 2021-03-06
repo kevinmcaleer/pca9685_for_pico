@@ -14,7 +14,7 @@ setup(
     description="PCA9685 for Raspberry Pi Pico",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/kevinmcaleer/smars_library",
+    url="https://github.com/kevinmcaleer/pca9685_for_pico",
     author="Kevin McAleer",
     author_email="kevinmcaleer@gmail.com",
     license="MIT",
@@ -25,7 +25,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    packages=["smars_library"],
+    packages=["pca9685_for_pico"],
     include_package_data=False,
-    install_requires=["adafruit-pca9685","pathlib"],
+    install_requires=["pathlib"],
     )
