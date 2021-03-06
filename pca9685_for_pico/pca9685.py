@@ -1,9 +1,29 @@
+# pca9685.py
+# Kevin McAleer
+# March 2021
+'''
+@author Kevin McAleer
+'''
+
 import ustruct
 import time
 
 
 class PCA9685:
+    """
+    This class models the PCA9685 board, used to control up to 16
+    servos, using just 2 wires for control over the I2C interface
+    """
     def __init__(self, i2c, address=0x40):
+        """
+        class constructor
+
+        Args:
+            i2c ([I2C Class, from the build in machine library]): This is used to 
+            bring in the i2c object, which can be created by 
+            > i2c = I2C(id=0, sda=Pin(0), scl=Pin(1))
+            address (hexadecimal, optional): [description]. Defaults to 0x40.
+        """
         self.i2c = i2c
         self.address = address
         self.reset()
