@@ -2,7 +2,7 @@
 # Kevin McAleer
 # March 2021
 
-from pca import PCA9685
+from pca9685 import PCA9685
 import math
 
 
